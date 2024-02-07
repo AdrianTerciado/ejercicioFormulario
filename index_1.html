@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formularios viejuners</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -16,18 +17,61 @@
             </nav>
     </header>
     <main>
-        <h2>El club Viejuners</h2>
+        <h2>Club de la tercera edad Viejuners</h2>
         <section>
+            <h3>Formulario de admisión</h3>
             <form>
-                <label for="first_name">First name:</label>
-                <input type="text" id="first_name" />
+                <fieldset>
+                    <legend>Tú</legend>               
+                    <p>
+                        <label for="first_name">Nombre:</label>
+                        <input type="text" name="first_name" id="first_name" autofocus="autofocus" placeholder="Escriba su nombre" tabindex="1"/>
+                    </p>
+                    <p>
+                        <label for="last_name">Apellido:</label>
+                        <input type="text" name="last_name" id="last_name" placeholder="Escriba su primer apellido" tabindex="2">
+                    </p>
+                    <p>
+                        <label for="age">Edad:</label>
+                        <input type="number" name="age" id="age" min="55" max="110" placeholder="Edad" tabindex="3"/>
+                    </p>
+                    <p>
+                        <label>Sexo: </label>
+                        <label for="male">Hombre</label>
+                        <input type="radio" name="gender" id="male" tabindex="4"/>
+                        <label for="female">Mujer</label>
+                        <input type="radio" name="gender" id="female" tabindex="5"/>
+                    </p>
+                    <p>
+                        <label for="felling">¿Te sientes viejuner?</label>
+                        <input type="checkbox" name="felling" id="felling" tabindex="6">
+                    </p>
+                    <p>
+                        <label for="about_you" id="caja_texto">Escribe algo sobre tí:</label>
+                        <textarea name="about_you" id="about_you" cols="20" rows="4" placeholder="Cuéntanos" tabindex="7"></textarea>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Tus circunstancias</legend>
+                    <p>
+                        <label for="email">Correo electrónico: </label>
+                        <input type="email" name="email" id="email" tabindex="8" placeholder="Escriba su email">
+                    </p>                    <p>
+                        <label for="telephone">Número de teléfono: </label>
+                        <input type="tel" name="telephone" id="telephone" tabindex="9" placeholder="Escriba su teléfono">
+                    </p>
+                </fieldset>
+                    <p>
+                        <input type="reset" name="reset" id="reset" tabindex="10"/>
+                        <!--No creo que reset y submit necesiten label pues ya es muy explícito-->
+                    </p>
+                    <p>
+                        <input type="submit" name="submit" id="submit" tabindex="11"/>
+                    </p>
+
+                    
+                    
                 
-                <label for="last_name">Last name:</label>
-                <input type="text" id="last_name">
-   
-                <label for="age">Age:</label>
-                <input type="number" id="age"/>
- 
                
             </form>
         </section>
