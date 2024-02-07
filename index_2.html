@@ -19,7 +19,82 @@
     <main>
         <h2>Los ladronzuelos de bicicletas</h2>
         <section>
-            
+            <form>
+                <fieldset>
+                    <legend>Información necesaria</legend>
+                    <p>
+                        <label for="date">Día:</label>
+                        <input type="date" name="date" id="date" autofocus="autofocus" tabindex="1"/>
+                    </p>
+                    <p>
+                        <label for="time">Hora:</label>
+                        <input type="time" name="time" id="time" tabindex="2"/>
+                    </p>
+                    <p>
+                        <label for="color">Color de la bicicleta:</label>
+                        <input type="color" name="color" id="color" tabindex="3"/>
+                    </p>
+                    <p>
+                        <label for="price">Rango de precio:</label>
+                        <input type="range" name="price" id="price" tabindex="4" min="100" max="5000" value="2500" step="100"/>
+                    </p>
+                    <p>
+                        <label for="type">Tipo de bicicleta:</label>
+                        <select name="type" id="type" tabindex="5">
+                            <option value="Paseo">Paseo</option>
+                            <option value="Montaña">Montaña</option>
+                            <option value="Carreras">Carreras</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="accesories">Accesorios:</label>
+                        <select multiple name="accesories" id="accesories" tabindex="6"/>
+                            <option value="Ruedines">Ruedines</option>
+                            <option value="Pegatinas">Pegatinas</option>
+                            <option value="Cestita">Cestita</option>
+                            <option value="Bomba_de_aire">Bomba de aire</option>
+                            <option value="Timbre">Timbre</option>
+                            <option value="Foco">Foco</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="brand">¿Qué marca era?</label>
+                        <input type="list" list="brand">
+                        <datalist name="brand" id="brand" tabindex="7">
+                            <option value="Specialized">Specialized</option>
+                            <option value="Trek">Trek</option>
+                            <option value="Merida">Merida</option>
+                            <option value="Scott">Scott</option>
+                            <option value="Specialized">Specialized</option>
+                            <option value="Trek">Trek</option>
+                            <option value="Giant">Giant</option>
+                            <option value="Cube">Cube</option>
+                            <option value="Lapierre">Lapierre</option>
+                            <option value="Orbea">Orbea</option>
+                            <option value="Cannondale">Cannondale</option>
+                            <option value="Bmc">Bmc</option>
+                            <option value="canyon">canyon</option>
+                            <option value="Look">Look</option>
+                            <option value="Protek">Protek</option>
+                            <option value="Megamo">Megamo</option>
+                            <option value="Pinarello">Pinarello</option>
+                            <option value="Bianchi">Bianchi</option>
+                            <option value="Bh">Bh</option>
+                            <option value="Factor">Factor</option>
+                            <option value="Ghost">Ghost</option>
+                            <option value="Cervélo">Cervélo</option>
+                            <option value="Argon">Argon</option>
+                        </datalist>
+                    </p>
+                </fieldset>
+                <p>
+                    <input type="reset" name="reset" id="reset" tabindex="10"/>
+                    <!--No creo que reset y submit necesiten label pues ya es muy explícito-->
+                </p>
+                <p>
+                    <input type="submit" name="submit" id="submit" tabindex="11"/>
+                </p>
+            </form>
         </section>
     </main>
 </body>
